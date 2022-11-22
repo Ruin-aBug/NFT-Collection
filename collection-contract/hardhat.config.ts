@@ -5,7 +5,7 @@ import "@nomicfoundation/hardhat-toolbox";
 
 dotenv.config();
 
-const proxyUrl = "http://192.168.43.237:7890"; // change to yours, With the global proxy enabled, change the proxyUrl to your own proxy link. The port may be different for each client.
+const proxyUrl = "http://192.168.31.42:7890"; // change to yours, With the global proxy enabled, change the proxyUrl to your own proxy link. The port may be different for each client.
 import { ProxyAgent, setGlobalDispatcher } from "undici";
 const proxyAgent = new ProxyAgent(proxyUrl);
 setGlobalDispatcher(proxyAgent);
