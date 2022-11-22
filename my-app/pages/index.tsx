@@ -154,9 +154,9 @@ export default function Home() {
 			})
 			connectWallet();
 
-			const isPresaleStatused = checkIfPresaleStatused();
+			// const isPresaleStatused = presaleEnded;
 
-			if (isPresaleStatused) {
+			if (presaleEnded) {
 				checkIfPresaleEnded();
 			}
 
